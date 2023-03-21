@@ -1,0 +1,24 @@
+files & thier extensions:
+        text file          .txt
+        pdf                .pdf
+        picture            .jpg, png, gif, tiff, etc
+        world document      .doc
+        excel files         .xlsx
+        power point         .ppt
+        java files          .java  (source code)
+        java file           class (byte code)
+
+
+        how to open preference window:
+        windows:
+            file -> settings
+
+        mac:
+            Intelij Idea ->Prefence
+
+        formatting the codes:
+        Wimdows:
+        ctrl+alt+L
+
+        mac:
+        commend+option +L
