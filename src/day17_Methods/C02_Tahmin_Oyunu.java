@@ -9,8 +9,8 @@ public class C02_Tahmin_Oyunu {
 
         // bilgisayarın tuttuğu 0 dahil-50 arası
         //sayısıyı 5 hamlede bulma
-        //tuttuğu sayı düsük ise bir tahmin yaparsak yukarı
-        // tuttuğu sayı yüksek ise bir tahmin yaparsak aşaği
+        //tuttuğu sayıdan düsük ise bir tahmin yaparsak yukarı
+        // tuttuğu sayıdan yüksek ise bir tahmin yaparsak aşaği
 
 
         Random random=new Random();

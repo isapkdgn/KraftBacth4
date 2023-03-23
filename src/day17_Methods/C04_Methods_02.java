@@ -6,16 +6,21 @@ public class C04_Methods_02 {
     public static void main(String[] args) {
         //aritmeticOrtalam();
         //buyukSayi();
-        //kiloOkkaCevir();
+        kiloOkkaCevir();
         //int sayi=5;
         //kupHesaplama(sayi);
         //kareHesaplama(sayi);
         //isimYaz("isa");
         //max(5,10);
         //ortalama(15,30);
-        isimYas("isa",38);
+        //isimYas("isa",38);
 
     }
+
+    /**
+     * a metod that returns the max of to consaole
+     */
+
 
     public static void aritmeticOrtalam(){
 

@@ -12,16 +12,17 @@ public class BankaMenusu {
         Scanner scan = new Scanner(System.in);
 
 
-
+        double money = 2000;
         anaMenü:while (true) {
             System.out.println("Bankaıza Hoş Geldiniz\n1 para ekle 2 hesabımı gör 3 para çek 4 çıkış");
-            int money = 2000;
+
             int tercih = scan.nextInt();
 
-            if (tercih == 1) {
-                paraekle:while (true) {
+            switch (tercih) {
+                case 1:
+                while (true) {
                     System.out.println("eklenecek para miktarı");
-                    int para = scan.nextInt();
+                    double para = scan.nextDouble();
                    // System.out.println("toplam para :" + (para + money));
                     money+=para;
                     System.out.println("işleme devam etmek için 1 e basın bir üst menü için 2 ye kart iade için 3 e basın");
@@ -36,51 +37,43 @@ public class BankaMenusu {
 
                     }
                 }
-            } if (tercih == 2) {
-                bakiye:while (true) {
-                    System.out.println("bakiye :"+money);
-                    System.out.println("işleme devam etmek için 1 e basın bir üst menü için 2 ye kart iade için 3 e basın");
-                    int tercih1 = scan.nextInt();
-                    if (tercih1 == 1) {
-                        continue ;
+                case 2:
+                    System.out.print("bakiyeniz : "+money);
+                    break;
 
-                    } else if (tercih1 == 2) {
-                        continue anaMenü;
+                case 3:
+                    while(true){
+                        System.out.print("Çekmek  isteğiniz tutarı girin: ");
+                        double para= scan.nextDouble();
+                        if(para>money){
+                            System.out.println("hesabınızda yeterli bakiye yoktur");
+                            continue anaMenü;
+                        }
+                        money-=para;
+                        System.out.println("işleme devam etmek için 1 e basın bir üst menü için 2 ye kart iade için 3 e basın");
+                        int tercih1 = scan.nextInt();
+                        if (tercih1 == 1) {
+                            continue ;
+                        } else if (tercih1 == 2) {
+                            continue anaMenü;
 
-                    } else if (tercih1 == 3) {
-                        break anaMenü;
+                        } else if (tercih1 == 3) {
+                            break anaMenü;
 
+                        }
                     }
-                }
+                case 4:
+                    break anaMenü;
+
+
             }
 
 
 
 
-            if (tercih == 3) {
 
-               paracekme: while (true) {
-                    System.out.println("cekmek istediğiniz miktarı girin");
-                    int miktar= scan.nextInt();
-                  // System.out.println("kalan money:"+(money-miktar));
-                   money-=miktar;
-                    System.out.println("işleme devam etmek için 1 e basın bir üst menü için 2 ye kart iade için 3 e basın");
-                    int tercih1 = scan.nextInt();
-                    if (tercih1 == 1) {
-                        continue ;
 
-                    } else if (tercih1 == 2) {
-                        continue anaMenü;
 
-                    } else if (tercih1 == 3) {
-                        break anaMenü;
-                    }
-                }
-
-            }
-            if (tercih==4){
-                break;
-            }
         }
     }
 }

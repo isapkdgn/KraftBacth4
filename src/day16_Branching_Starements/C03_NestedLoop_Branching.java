@@ -33,7 +33,16 @@ public class C03_NestedLoop_Branching {
             }
             System.out.print (i+" ");
         }
+        System.out.println();
+        System.out.println("-------------------------");
+        // 0-1000 arasındaki 5 ve 5 nin katlarını ekrana yazdırın ancak bu sayılardan 50 ye tam bölünenler olmasın
+        for (int i=5;i<=1000;i+=5){
+            if (i%50==0){
+                continue;
 
+            }
+            System.out.print(i+" ");
+        }
 
 
 

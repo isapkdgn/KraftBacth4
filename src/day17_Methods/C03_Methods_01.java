@@ -4,9 +4,9 @@ public class C03_Methods_01 {
     public static void main(String[] args) {
 
 message_1();
-
-
-
+yas(1984);
+kuvvet(5,5);
+islem(5,6);
     }
     public static void message_1(){
         message_3();
@@ -20,6 +20,23 @@ message_1();
         System.out.println("3");
 
     }
+    public static void yas(int x){
+
+        int result=2023-x;
+        System.out.println("yasiniz: "+result);
+    }
+    public static void kuvvet(double x,double y){
+        double result=Math.pow(x,y);
+        System.out.println(result);
+    }public static void islem(int x,int y){
+        int result=x+y;
+        System.out.println(x+"+"+y+"="+result);
+    }
+
+
+
+
+
 
 
 
