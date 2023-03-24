@@ -22,8 +22,5 @@ public class Tasks4_Armstrong {
 
         }
 
-
-
-
     }
 }
