@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class C04_Methods_Last_Question {
     public static void main(String[] args) {
-        sayiAl();
+        System.out.println(sayiAl());
 
     }
-    public static void sayiAl(){
+    public static int sayiAl(){
         Scanner scan=new Scanner(System.in);
         System.out.print("1.sayı :");
         int sayi= scan.nextInt();
         System.out.print("2, sayi :");
         int sayi2= scan.nextInt();
         int sayi3=ucunkatı(sayi2);
-        System.out.println(sayılariTopla(sayi,ucunkatı(sayi2)));
+        return (sayılariTopla(sayi,ucunkatı(sayi2)));
     }
     public static int ucunkatı(int sayi2){
         if (sayi2%3==0){
