@@ -4,7 +4,7 @@ public class Tasks2_PrimeNumbers {
     public static void main(String[] args) {
 
 
-        System.out.println(primeNumbers(2));
+        System.out.println(primeNumbers(7));
 
 
     }
