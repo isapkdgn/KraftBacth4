@@ -8,9 +8,36 @@ public class Main {
         daire1.r=5;
         Daire daire2=new Daire();
         daire2.r=20;
+        Daire daire3=new Daire();
+        daire3.r=15;
 
         daire1.alanHesapla();
         daire2.alanHesapla();
+        daire3.alanHesapla();
+
+        Person cemile=new Person();
+        cemile.yas=35;
+        cemile.isim="cemile";
+        cemile.yiksonuortalaması=45;
+
+
+
+
+        Person cavit=new Person();
+        cavit.yas=40;
+        cavit.isim="cavit";
+        cavit.tcNO="321456789";
+        cavit.yiksonuortalaması=80;
+
+        System.out.println(cemile.isim);
+        cemile.uyu();
+        cavit.uyu();
+
+        cemile.tumBilgileriGetir();
+        cavit.tumBilgileriGetir();
+
+        System.out.println(cemile.yiksonuortalaması);
+        System.out.println(cavit.yiksonuortalaması);
 
 
 

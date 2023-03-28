@@ -8,6 +8,7 @@ public class Person {
     String cinsiyet;
     int yas;
     String tcNO;
+    double yiksonuortalaması;
 
     public void uyu(){
         System.out.println(isim+"uyuyor");
@@ -21,6 +22,19 @@ public class Person {
         System.out.println("yas:"+yas);
         System.out.println("cinsiyet:"+cinsiyet);
         System.out.println("kimlik numarası:"+tcNO);
+    }
+
+    public static String ortalama(double x){
+
+        if (x<50){
+            return "C";
+        } else if (x<75) {
+            return "B";
+        }else {
+            return "A";
+        }
+
+
     }
 
 
