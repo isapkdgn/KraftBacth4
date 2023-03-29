@@ -9,6 +9,7 @@ public class Person {
     int yas;
     String tcNO;
     double yiksonuortalaması;
+    char a;
 
     public void uyu(){
         System.out.println(isim+"uyuyor");

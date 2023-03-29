@@ -12,22 +12,22 @@ public class JavaMemory {
 
         CarNew car2=new CarNew();
         car2.marka="honda";
-        car1=car2;
+       // car1=car2;
         System.out.println(car1.marka);
-        //System.out.println(car1==car2);
-        //System.out.println(car1);
-        //.out.println(car2);
+        System.out.println(car1==car2);
+        System.out.println(car1);
+        System.out.println(car2);
 
       //  == operatörü referansları karşılaştırır
      //    equals() dataları karşılastırır
 
-       /* String str=new String();
+        String str=new String();
         str="harun";
         String str2=new String();
         str2="harun";
         System.out.println(str==str2);
 
-        */
+
     }
 
     public static int variable(int x,int y){

@@ -14,10 +14,13 @@ public class Main {
         daire1.alanHesapla();
         daire2.alanHesapla();
         daire3.alanHesapla();
+        daire1.cevreHesapla();
 
         Person cemile=new Person();
         cemile.yas=35;
         cemile.isim="cemile";
+        cemile.cinsiyet="bayan";
+        cemile.tcNO="123456789";
         cemile.yiksonuortalaması=45;
 
 
@@ -26,6 +29,7 @@ public class Main {
         Person cavit=new Person();
         cavit.yas=40;
         cavit.isim="cavit";
+        cavit.cinsiyet="bay";
         cavit.tcNO="321456789";
         cavit.yiksonuortalaması=80;
 
@@ -35,10 +39,11 @@ public class Main {
 
         cemile.tumBilgileriGetir();
         cavit.tumBilgileriGetir();
+        System.out.println(Person.ortalama(cavit.yiksonuortalaması));
+        System.out.println(Person.ortalama(cemile.yiksonuortalaması));
 
-        System.out.println(cemile.yiksonuortalaması);
-        System.out.println(cavit.yiksonuortalaması);
 
+        System.out.println(cavit.a);
 
 
     }

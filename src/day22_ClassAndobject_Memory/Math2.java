@@ -5,12 +5,12 @@ public class Math2 {
 
 
     public static int math2(int t,int k){
-        int carpım=1;
+        int result=1;
         for (int i=1;i<=k;i++){
 
-            carpım=carpım*t;
+            result*=t;
         }
-        return carpım;
+        return result;
     }
 
 
