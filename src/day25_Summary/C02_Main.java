@@ -1,6 +1,6 @@
 package day25_Summary;
 
-public class C01_Main {
+public class C02_Main {
     public static void main(String[] args) {
 
         int f=4;

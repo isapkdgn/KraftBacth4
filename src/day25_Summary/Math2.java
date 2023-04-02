@@ -15,7 +15,8 @@ public class Math2 {
         }
         int result=1;
         for (int i=0;i<us;i++){
-            result=result*taban;
+           // result=result*taban; // acık halı
+            result*=taban;
         }
         return result;
 

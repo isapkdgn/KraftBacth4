@@ -15,6 +15,7 @@ public class C01_Methods {
 
         System.out.println("sonDeger(\"merhaba\") = " + sonDeger("merhaba"));
         System.out.println("sonDeger1(\"merhaba\") = " + sonDeger1("merhaba"));
+        System.out.println("sonDeger2(\"merhaba\") = " + sonDeger2("merhaba"));
 
         int sayi1=5;
         int sayi2=10;
@@ -24,6 +25,7 @@ public class C01_Methods {
         String str1="harun";
         System.out.println(ucekle(str1));
         //contain(str1)
+        System.out.println("contain(str1,\"a\") = " + contain(str1, "a"));
 
     }
 
@@ -44,7 +46,12 @@ public class C01_Methods {
         return result;
     }
     public static char sonDeger1(String str){
+
         return str.charAt(str.length()-1);
+    }
+    public static String sonDeger2(String str){
+
+        return str.substring(str.length()-1);
     }
 
     public static int max(int a,int b){

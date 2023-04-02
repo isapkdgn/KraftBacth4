@@ -33,7 +33,7 @@ public class String_Example {
         String str5="Merhaba";
         String str6="ErMan";
       if  (ikinciKelimedevarmi(str5,str6)>=0){
-          System.out.println("icinde var ve 2.kelimenin "+ikinciKelimedevarmi(str5,str6)+"indesinde yer alıyor");
+          System.out.println("icinde var ve 2.kelimenin "+ikinciKelimedevarmi(str5,str6)+" indesinde yer alıyor");
       }else{
           System.out.println("2. kelimenin icinde yer almıyor");
       }
@@ -50,6 +50,7 @@ public class String_Example {
         System.out.println("-------------------");
         System.out.println(ındekstenitibarenYaz(str8, 3));
         System.out.println(ındekstenitibarenYaz(str8, 3, 6));
+
 
 
     }
@@ -106,7 +107,7 @@ public class String_Example {
         return str.indexOf(kelime);
     }
     public static int ikinciKelimedevarmi(String str1,String str2){
-     return str2.indexOf( str1.trim().charAt(5));
+     return str2.indexOf( str1.trim().charAt(0));
 
     }
     //lastindexof()
