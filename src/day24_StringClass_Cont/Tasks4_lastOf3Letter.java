@@ -5,7 +5,7 @@ public class Tasks4_lastOf3Letter {
         String name="pekdoğan";
         //           01234567
 
-        String name1=name.substring(5);
+        String name1=name.substring(name.length()-3);
 
         for (int i=1;i<=3;i++){
             System.out.println(name1);
