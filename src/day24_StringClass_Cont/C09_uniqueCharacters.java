@@ -2,7 +2,7 @@ package day24_StringClass_Cont;
 
 public class C09_uniqueCharacters {
     public static void main(String[] args) {
-        String str="abccfff";
+        String str="Derslerime cok calisiyorum";
 
         String result="";   //bd
 

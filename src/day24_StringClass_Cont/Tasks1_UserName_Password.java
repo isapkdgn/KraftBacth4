@@ -13,7 +13,6 @@ public class Tasks1_UserName_Password {
             System.out.println("Enter a Password");
             String password = scan.nextLine();
 
-
             if (userName_PasswordControl(userName,password)){
                 System.out.println("giriş sayfası,,");
                 break;
@@ -24,7 +23,6 @@ public class Tasks1_UserName_Password {
                 }
                 System.out.println("hatalı işlem nedeniyle lütfen tekrar deneyin");
             }
-
         }
         System.out.println("hoş geldiniz sayfımıza");
 
