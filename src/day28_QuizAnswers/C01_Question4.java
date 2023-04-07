@@ -1,4 +1,4 @@
-package day_28_QuizAnswers;
+package day28_QuizAnswers;
 
 public class C01_Question4 {
     public static void main(String[] args) {

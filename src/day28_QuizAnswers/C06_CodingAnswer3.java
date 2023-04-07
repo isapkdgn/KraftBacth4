@@ -1,4 +1,4 @@
-package day_28_QuizAnswers;
+package day28_QuizAnswers;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class C06_CodingAnswer3 {
        System.out.println("bir kelime bir harf girin");
        String str= scan.nextLine();
        String ch= scan.nextLine();
-       System.out.println(str+" da "+frequency(str,ch)+" adet"+ch+" bulunmaktadır");
+       System.out.println(str+" da "+frequency(str,ch)+" adet "+ch+" bulunmaktadır");
        frequency(str,ch);
    }
    public static int frequency(String str,String ch){

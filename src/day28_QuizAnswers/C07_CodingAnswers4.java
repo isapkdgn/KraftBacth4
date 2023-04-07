@@ -1,4 +1,4 @@
-package day_28_QuizAnswers;
+package day28_QuizAnswers;
 
 public class C07_CodingAnswers4 {
    // Girilen sayının faktoriyelini döndüren bir metot yazınız.

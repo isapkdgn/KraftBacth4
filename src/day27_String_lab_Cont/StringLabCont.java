@@ -13,9 +13,9 @@ public class StringLabCont {
         System.out.println(soyİsim("  isa ali pekdoğan   "));
         System.out.println(sonKelimeBul("   ali isa pekdoğan   "));
         System.out.println(yinelenHarfCıkart("Ananas"));
-        System.out.println(yinelenenKelimeCıkart("javva"));
+        System.out.println(yinelenenKelimeCıkart("araba"));
         System.out.println(sesliharfler("Ankara"));
-        System.out.println(ikiKelimeAynıHarfmi("iftar", "taref"));
+
 
 
     }
@@ -178,19 +178,7 @@ public class StringLabCont {
         return result;
 
     }
-    public static boolean ikiKelimeAynıHarfmi(String str1, String str2){
-        String result="";
-        String result2="";
 
-        for (int i = 0; i < str1.length(); i++) {
-            result+=str1.charAt(i);
-
-        }
-        for (int i = 0; i < str2.length(); i++) {
-            result2+=str2.charAt(i);
-        }
-       return result.contains(result2);
-    }
 
 
 
