@@ -9,7 +9,7 @@ public class Tasks5_Ebob {
 
     public static int ebob(int x, int y){
         int ebob=1;
-        for (int i = 1; i <= x&&i<=y; i++) {
+        for (int i = 1; i <=x && i<=y; i++) {
             if (x%i==0&&y%i==0){
                 ebob=i;
             }

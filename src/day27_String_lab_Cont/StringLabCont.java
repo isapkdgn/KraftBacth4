@@ -15,7 +15,7 @@ public class StringLabCont {
         System.out.println(yinelenHarfCıkart("Ananas"));
         System.out.println(yinelenenKelimeCıkart("araba"));
         System.out.println(sesliharfler("Ankara"));
-
+        System.out.println(tekrarEdenHarfler("java"));
 
 
     }
@@ -163,7 +163,22 @@ public class StringLabCont {
         }
         return result;
 
+    }
 
+
+
+    public static String tekrarEdenHarfler(String str) {
+
+        String result = "";
+        while (str.length() > 1) {
+
+            if (str.substring(0, 1).equals(str.substring(1, 2))) {
+                result += str.substring(0, 1);
+            }
+            str = str.replace(str.substring(0, 1), "");
+
+        }
+        return result;
     }
 
     public static String sesliharfler(String str){

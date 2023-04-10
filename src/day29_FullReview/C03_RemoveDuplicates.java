@@ -14,7 +14,7 @@ public class C03_RemoveDuplicates {
 
      */
     public static void main(String[] args) {
-        System.out.println(removeDuplicates("AABBCCBCF"));
+        System.out.println(removeDuplicates("AABBCCBC"));
     }
 
 

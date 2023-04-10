@@ -31,8 +31,8 @@ public class İsaCalisma {
             System.out.println(substring("merhaba", 3, 5));
             System.out.println("-----------------------------");
             System.out.println(karakterSay("mehaba", 'a'));
-            System.out.println(karakterSay1("ankara", 'a'));
-            System.out.println(karakterSay2("ankara", "a"));
+            System.out.println(karakterSay1("Ankara", 'a'));
+            System.out.println(karakterSay2("Ankara", "a"));
             System.out.println("-----------------------------");
             System.out.println(harfSil("merhaba", 'a'));
             System.out.println(harfSil2("merhaba", 'a'));
@@ -115,6 +115,7 @@ public class İsaCalisma {
            }
            return result;
        }
+
         //tek index  numarası alan substring metodunu yazınız
         // "Merhaba"     str.substring(3)=haba
         //  subString(String str,int index)
