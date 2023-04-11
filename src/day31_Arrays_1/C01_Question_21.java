@@ -14,8 +14,10 @@ public class C01_Question_21 {
 
     // Slm Ali
     public static void main(String[] args) {
-        System.out.println(kelimeKontrol());
-       // System.out.println(kelimeKontrol().length());
+     //   System.out.println(kelimeKontrol());
+        System.out.println(ebob(8, 12));
+        System.out.println(ekok(8, 12));
+
 
     }
 
@@ -52,6 +54,29 @@ public static String kelimeKontrol(){
 return kelime1.concat(" ").concat(kelime2);
 
 }
+// 2 adet aldığınız sayının ebob nu bulan metodu yazınız
+
+
+    public static int ebob(int x,int y){
+        int result=1;
+        int min=Math.min(x,y);
+        for (int i = 1; i <min; i++) {
+            if (x%i==0&&y%2==0){
+                result=i;
+            }
+        }
+
+        return result;
+    }
+
+public static int ekok(int a,int b){
+
+        return a*b/ebob(a,b);
+}
+
+
+
+
 
 
 }

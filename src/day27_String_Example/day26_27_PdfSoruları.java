@@ -11,6 +11,7 @@ public class day26_27_PdfSoruları {
         System.out.println(soru16("merhaba"));
         System.out.println("------------------");
         System.out.println(soru17("merhaba"));
+        System.out.println("----------------------");
         System.out.println(ilkBenzerSizHarfiBul("Merhaba"));
         System.out.println(ilkBenzerSizHarfiBul("Araba"));
         System.out.println(ilkBenzerSizHarfiBul("Karkas rotasi"));
