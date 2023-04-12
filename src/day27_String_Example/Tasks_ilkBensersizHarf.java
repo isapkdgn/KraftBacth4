@@ -2,7 +2,7 @@ package day27_String_Example;
 
 public class Tasks_ilkBensersizHarf {
     public static void main(String[] args) {
-        System.out.println(ilkBenzerSizHarfiBul1("Merhaba"));
+        System.out.println(ilkBenzerSizHarfiBul1("Karkas rotası"));
     }
     public static String ilkBenzerSizHarfiBul1(String str){
         str=str.toLowerCase().trim().replace(" ","");
