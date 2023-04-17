@@ -35,12 +35,12 @@ public class C05_Tasks {
    // biçimde bir array içine yerleştirsin. n = 5 Exm: [0,1,2,3,4]
 
    public static int[] sıralıYazdır(int n){
-        int[] x=new int[n];
-       for (int i = 0,j=0; i < x.length; i++,j++) {
-           x[i]=j;
+        int[] xarr=new int[n];
+       for (int i = 0; i < xarr.length; i++) {
+           xarr[i]=i;
 
        }
-       return x;
+       return xarr;
    }
 
    // Bir sayı dizisinin en büyük ve en küçük element lerinin aritmetik ortalamasını

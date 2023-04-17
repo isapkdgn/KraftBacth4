@@ -3,8 +3,7 @@ package day34_Arrays_4;
 import java.util.Arrays;
 
 public class C04_Tasks {
-    // Bir method yazın int n parametre olarak alsın. n değeri kadar sayıları sıralı bir
-    // biçimde bir array içine yerleştirsin. n = 5 Exm: [0,1,2,3,4]
+
     public static void main(String[] args) {
         System.out.println(Arrays.toString(buildIntArray(5)));
         System.out.println("------------------------------------");
