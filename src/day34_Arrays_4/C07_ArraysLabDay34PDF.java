@@ -41,9 +41,18 @@ public class C07_ArraysLabDay34PDF {
         System.out.println(Arrays.toString(randomArray3()));
         System.out.println("------------------örnek 13 -------------------");
         System.out.println(Arrays.toString(new int[]{randomArrayIkinciEnBuyuk()}));
+
+        System.out.println(enBüyük2sayi(randamSayiAta(500, 50, 80)));
+        System.out.println(maxArray(randamSayiAta(500, 50, 80)));
+
         System.out.println("--------------örnek 14 -----------------------");
         int[] z = {2, 3, 3, 4, 5, 6, 5, 6, 3};
         System.out.println(ardisikucsayiVarmıArrayi(z));
+        System.out.println("------------örnek15-----------------------");
+        System.out.println("------------örnek16-----------------------");
+        int [] zz={2,4,5,8,8};
+        System.out.println(mostRepeatNumber(zz));
+
 
         System.out.println("---------------örnek 17 ----------------------");
         int[] dubli = {1, 2, 8, 1};
@@ -293,6 +302,38 @@ public class C07_ArraysLabDay34PDF {
         return max2;
     }
 
+    public static int enBüyük2sayi(int[] arr){
+        int max=maxArray(arr);
+        int enBüyük2sayi=arr[0];
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]>=enBüyük2sayi&&arr[i]!=max){
+                enBüyük2sayi=arr[i];
+            }
+        }
+
+
+        return enBüyük2sayi;
+    }
+    public static int maxArray(int[] arr){
+        int max=arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]>=max){
+                max=arr[i];
+            }
+        }
+        return max;
+    }
+    public static int[] randamSayiAta(int boyut,int from, int to){
+        int[] arr=new int[boyut];
+        Random random=new Random();
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]=random.nextInt(to-from)+from;  // aradaki fark iceriye miminum dısariya artı olarak yazılır
+        }
+        return arr;
+    }
+
     //Örnek 14: Array’in içerisinde ard arda 3 adet sıralı sayı var ise true döndüren metodu yazınız.
     //    [2,3,3,4,5,6,5,6,3] → true     [2,4,5,8,8] → false        [1,2,3] → true     [1,2] → false
 
@@ -322,6 +363,29 @@ yazınız. (sağında veya solunda aynı sayı yoksa yalnızdır.)
             [2,4,5,8] → -1
 
     */
+    public static int mostRepeatNumber(int[] arr){
+
+        int maxcount=1;
+        int deger=0;
+
+        //1,1,1,5,8,8,8,8
+        for (int i = 0; i < arr.length; i++) {
+            int count=0;
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i]==arr[j]){
+                    count++;
+                }
+            }
+            if (count>maxcount){
+                maxcount=count;
+                deger=arr[i];
+            }
+        }
+        if (maxcount==1){
+            return -1;
+        }
+        return deger;
+    }
 
 
 
