@@ -1,4 +1,4 @@
-package day_36_WrapperClass;
+package day36_WrapperClass;
 
 import java.util.Arrays;
 

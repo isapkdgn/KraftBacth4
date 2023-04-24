@@ -7,11 +7,11 @@ public class C05_For_Loops {
     public static void main(String[] args) {
 
 
-        /*for (int i=0 ,k=5;i<3;i++,k+=5){
+        for (int i=0 ,k=5;i<3;i++,k+=5){
             System.out.println(k);
         }
 
-         */
+
 
 
         //boolean a=true;

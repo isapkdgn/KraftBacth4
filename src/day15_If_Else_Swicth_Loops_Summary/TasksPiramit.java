@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TasksPiramit {
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
+      /*  Scanner scan=new Scanner(System.in);
 
 
         System.out.println("satır sayısını sayın");
@@ -21,6 +21,8 @@ public class TasksPiramit {
             }
             System.out.println();
         }
+
+       */
         System.out.println("-------------------------------------------");
         for (int i = 5; i >0 ; i--) {
             for (int j = 1; j < i; j++) {

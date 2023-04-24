@@ -1,4 +1,4 @@
-package day_36_WrapperClass;
+package day36_WrapperClass;
 
 public class C01_Wrapper {
     public static void main(String[] args) {

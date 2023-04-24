@@ -49,6 +49,10 @@ public class C07_ArraysLabDay34PDF {
         int[] z = {2, 3, 3, 4, 5, 6, 5, 6, 3};
         System.out.println(ardisikucsayiVarmıArrayi(z));
         System.out.println("------------örnek15-----------------------");
+        int[] z1={2,3,3,4,5,6,5,6,3};
+        System.out.println(esitOlmayanSayi(z1));
+
+
         System.out.println("------------örnek16-----------------------");
         int [] zz={2,4,5,8,8};
         System.out.println(mostRepeatNumber(zz));
@@ -356,6 +360,26 @@ yazınız. (sağında veya solunda aynı sayı yoksa yalnızdır.)
             [1,2] → 1,2
 
     */
+
+    public static String esitOlmayanSayi(int[] arr){
+        String result="";
+        for (int i=1;i<=arr.length-2;i++){
+            if (arr[i]!=arr[i-1]&&arr[i]!=arr[i+1]&&arr[i-1]!=arr[i+1]){
+                result+=arr[i]+" ";
+
+            }
+        }
+        if (arr[0]!=arr[1]){
+            result+=arr[0]+" ";
+        }
+        if (arr[arr.length-1]!=arr[arr.length-2]){
+            result+=arr[arr.length-1]+" ";
+        }
+        return result;
+    }
+
+
+
    /* Örnek 16: Array’in içerisinde en çok bulunan sayıyı veren metodu yazınız. (eşitlik durumda herhangi
     birini alabilir,1 den fazla bulunmuyorsa -1 döndürecek)
             [2,3,3,3,6,6,5,6,3] → 3
@@ -506,14 +530,17 @@ yazınız. (sağında veya solunda aynı sayı yoksa yalnızdır.)
     //  toplamını veren metodu yazınız.
 
     public static int dublicateOlmayanToplam(int[] arr) {
-        int count = 0;
-        for (int i = 0,j=1; i < arr.length-1; i++,j++) {
-           if (arr[i]!=arr[j]){
-               count+=arr[i];
-           }
+        int result=0;
+        out:for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if(i!=j&&arr[i]==arr[j]){
 
+                    continue out;
+                }
+            }result+=arr[i];
         }
-        return count;
+        return result;
+
 
     }
 

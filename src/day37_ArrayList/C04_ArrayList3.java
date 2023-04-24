@@ -1,4 +1,4 @@
-package day_37_ArrayList;
+package day37_ArrayList;
 
 import java.util.ArrayList;
 
@@ -20,6 +20,11 @@ public class C04_ArrayList3 {
         listOfnums.add(100);
         listOfnums.add(100);
         listOfnums.add(500);
+        ArrayList<String> stringNums=new ArrayList<>();
+        stringNums.add("10");
+        stringNums.add("100");
+        stringNums.add("101");
+        stringNums.add("1000");
 
         printLisNumbers(listOfnums);
         System.out.println("----------------");
@@ -27,7 +32,11 @@ public class C04_ArrayList3 {
         System.out.println("----------------");
         System.out.println(dublicate(listOfnums));
         System.out.println("----------------");
-
+        System.out.println(multiply(listOfnums));
+        System.out.println("----------------");
+        System.out.println(toInLİst(stringNums));
+        System.out.println("----------------");
+        System.out.println(writeNumbers(20));
 
 
     }
@@ -59,6 +68,18 @@ public class C04_ArrayList3 {
         return arrListYeni;
     }
 
+    public static int multiply(ArrayList<Integer> arrayList){
+
+        int result=1;
+        for (int i = 0,j=1; i < arrayList.size()-1; i++,j++) {
+            if (arrayList.get(i)== arrayList.get(j)){
+                result*= arrayList.get(j);
+            }
+        }
+
+        return result ;
+    }
+
     public static ArrayList<Integer> toInLİst(ArrayList<String > arrStringList){
         ArrayList<Integer> arrIntList=new ArrayList<>();
         for (int i = 0; i < arrStringList.size(); i++) {
@@ -67,9 +88,22 @@ public class C04_ArrayList3 {
         return arrIntList;
     }
 
+   /* ArrayList<Integer> myList = getList(20);//return method
+    System.out.println(myList);
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
-    //yeni bir araylist olusturun içerisine 5 adet sayı ekleyin
-    // dondur(int x) x kadar sayıları  kendi içerisınde döndürün
-    // 12345 döndür(int 1) 51234  döndür(int 3)  34512   yeni bir arrayLİst
+    */
+    public static ArrayList<Integer> writeNumbers(int size){
+        ArrayList<Integer> myList=new ArrayList<>(size);
+        for (int i = 1; i <=size; i++) {
+            myList.add(i);
+        }
+        return myList;
+    }
+
+
+
+
+
 
 }
