@@ -4,7 +4,7 @@ public class C03_Kraftbank_En {
 
     public static void main(String[] args) {
         //1. ve 2. soru
-        KraftBank_E kraftBank1=new KraftBank_E("CJ0001","Mehmet Akif YILMAZ",true);
+        KraftBank_E kraftBank1=new KraftBank_E("kk0071","isa pekdoğan",true);
         System.out.println(kraftBank1.toString());
         kraftBank1.setIsSms(false);
         System.out.println(kraftBank1.toString());
@@ -12,7 +12,7 @@ public class C03_Kraftbank_En {
         System.out.println("...........................................................");
 
         //3.soru
-        KraftBank_E kraftBank2=new KraftBank_E("CJ0001","Mehmet Akif YILMAZ",true, 50000,"f067jgj-7o54-4f3f-7c44bjk");
+        KraftBank_E kraftBank2=new KraftBank_E("kk0071","isa pekdoğan",true, 50000,"f067jgj-7o54-4f3f-7c44bjk");
         kraftBank2.createToken(kraftBank2);
         System.out.println(kraftBank2.toString());
         System.out.println("...........................................................");
@@ -33,7 +33,7 @@ public class C03_Kraftbank_En {
         System.out.println(kraftBank2.getCustomerToken());
 
         //6.soru
-        kraftBank2.setCustomerFullName("Ayşe");
+        kraftBank2.setCustomerFullName("ankara");
         System.out.println(kraftBank2.getCustomerFullName());
 
     }
