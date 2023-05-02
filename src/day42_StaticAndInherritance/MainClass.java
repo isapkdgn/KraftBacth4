@@ -1,8 +1,10 @@
 package day42_StaticAndInherritance;
 
+import day43_InheritanceAndKeywords.Sekiller;
+
 import static java.lang.Math.*;
 
-public class MainClass {
+public class MainClass extends Sekiller {
     public static void main(String[] args) {
         // B b=new B();
         // B b1=new B(4);
@@ -16,6 +18,7 @@ public class MainClass {
 
         ChildClass childClass=new ChildClass("Tester","harun");
         System.out.println(childClass.meslek);
+        System.out.println(Sekiller.a);
 
 
     }

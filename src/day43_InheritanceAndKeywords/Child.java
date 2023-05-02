@@ -2,9 +2,13 @@ package day43_InheritanceAndKeywords;
 
 public class Child extends Parent{
 
-    int x;
+    int y;
+
+    public Child(String parentName){
+       super(parentName);
+    }
 
     public void childMethod(int x){
-        System.out.println(x);
+
     }
 }
