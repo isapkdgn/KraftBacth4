@@ -30,8 +30,12 @@ public class C03_List {
         System.out.println(list4);
         System.out.println(((Stack) list4).pop()); //LIFO
         System.out.println(list4);
+        System.out.println(((Stack) list4).peek());
+        System.out.println(list4);
         System.out.println(((Stack) list4).push(60));    //LIFO
         System.out.println(list4);
+
+        System.out.println(((Stack<Integer>) list4).peek());
 
 
     }
