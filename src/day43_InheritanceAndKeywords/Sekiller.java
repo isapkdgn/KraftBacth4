@@ -5,7 +5,7 @@ public class Sekiller {
    protected static int a=5;
 
     int kenarUzunlugu;
-    double yaricap;
+    public double yaricap;
     static double  pi=3.14;
     public int alanHesapla(){
 

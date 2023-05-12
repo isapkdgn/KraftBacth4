@@ -24,7 +24,7 @@ public class C01_Exception_5 {
         //  System.out.println(bolme(5,0));
 
 /*
-        String[] arr={"Harun","Mehmet","Ahmet"};
+        String[] arr={"Ogretmen","Mehmet","Ahmet"};
         try {
             System.out.println(arr[5]);
         }catch (Exception e){

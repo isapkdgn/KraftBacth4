@@ -11,7 +11,7 @@ public class Car {
     boolean isManuel;
     private final String sifre="harun";
 
-    static int  tekerlekSayisi=4;
+    public static int  tekerlekSayisi=4;
 
     public String getSaseNo(){
         return saseNo;

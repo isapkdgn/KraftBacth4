@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class C03_ArraysToString {
     public static void main(String[] args) {
         String arr[] = new String[4];
-        arr[0] = "Harun";
+        arr[0] = "Ogretmen";
         arr[1] = "Mehmet";
         arr[2] = "Celal";
         arr[3] = "Emine";

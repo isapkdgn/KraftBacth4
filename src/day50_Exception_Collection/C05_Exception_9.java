@@ -36,7 +36,7 @@ public class C05_Exception_9 {
 
     static void a() throws Exception {
 
-        throw new Exception("Harun hata fırlattı"); // interwiev sorusu
+        throw new Exception("Ogretmen hata fırlattı"); // interwiev sorusu
     }
 
 

@@ -8,7 +8,7 @@ public class İsaCalisma {
             // harfini yazan , 3 kelimeden az ise inputu döndüren bir metot yazınız.
             //Merhaba Mer Ali Ali
 
-            // String str="Harun"; // har
+            // String str="Ogretmen"; // har
             // ali ali
             //iş iş
             // a a

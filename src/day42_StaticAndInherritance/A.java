@@ -2,7 +2,7 @@ package day42_StaticAndInherritance;
 
 public class A {
 
-    public static String staticVariable="Harun";
+    public static String staticVariable="Ogretmen";
     public String normalVariable;
 
 

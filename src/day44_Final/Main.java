@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-     /* final   String[] strArr= {"Harun","Mehmet","Ahmet"};
-         String[] strArr2= {"Harun","Mehmet","Ahmet"};
+     /* final   String[] strArr= {"Ogretmen","Mehmet","Ahmet"};
+         String[] strArr2= {"Ogretmen","Mehmet","Ahmet"};
        strArr=strArr2;
        strArr2=strArr;
 
